@@ -19,15 +19,15 @@ or mode of what each of the models predicts (sort of like democraticly voting). 
 [bagged decision trees](https://en.wikipedia.org/wiki/Bootstrap_aggregating#:~:text=Bootstrap%20aggregating%2C%20also%20called%20bagging,and%20helps%20to%20avoid%20overfitting.), 
 and [random forests](https://en.wikipedia.org/wiki/Random_forest) in python. 
 
-Technology
+## Technology
 * Python (this project was "built from scratch")
 * Pandas and numpy for data preprocessing
 
-Test cases
+## Test cases
 * Test_case_1: using data about credit card holder to predict if they will default
 * Test_case_2: using data about a specific car to predict if its type (van, regular, bus, etc.)
 
-How the algorithm works:
+## How the algorithm works:
 Before starting the algorithm, one much pick the following hyperparameters
 - nmin: the minimum number of training examples an internal node can have before it must become a terminal node
 - alpha: after the tree is built, this parameter controls the amount of pruning (removal of subtrees and converting internal nodes to terminal nodes) we do.
@@ -53,7 +53,17 @@ subject to the constraints of the "number of features to consider".
 Do this ntree times.
 7. Make predictions on a test instance by averaging (for regression tasks) or taking the mode(for classification tasks) the predictions of the ntree models.
 
-Design
-File structure
+## Design
+
+### File structure
+- Test_case_1.py: Script to build a tree model for predicting is a given credit card holder to predict if they will default
+- Test_case_2.py: Script to build a tree and ensemble model to predict if its type (van, regular, bus, etc.)
+- Tree.py: Contains tree class, which is the only class the user must interact with to make a single tree model. To create a tree model the user simply has to initialize a tree object (the root tree object is automatically initialized), make the tree by calling the make method, and prune the tree. It also contains a method "draw" to visualize the tree. 
+- BuildNode.py: Implements BuildNode function which takes a unexplored node and returns a terminal or nonterminal node. The build method of the tree works by passing an unexplored node to the BuildNode function, and reassigning to the unexplored node to the node returned by the BuildNode function ([breadth first search algorithm](https://en.wikipedia.org/wiki/Breadth-first_search) is used to explore the unexplored nodes. 
+- Node.py: Implements the node class, terminal node class, and nonterminal node class. The terminal node class and nonterminal node class are inherit from the node class. Given the necessary information nonterminal, terminal or unexplored node objects can be initialized.
+- Decision.py: Contains classes for making "boolean questions".
+- SelectFeature.py: Constructs all possible "boolean questions" using Decision.py, calculates what the imp
+- Ensemble.py: Contains ensemble class,  which is the only class the user must interact with to make a ensemble model. So if all you want is an ensembled model, the user does not need to use the Tree.py
+
 
 Class diagram
