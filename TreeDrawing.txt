@@ -1,47 +1,11 @@
 NEW LEVEL 
-Level: 0 NODE: (b'V11' is less then 179)
+Level: 0 NODE: (b'Maritial Status' is an element of Married)
 NEW LEVEL 
-Level: 1 NODE: (b'V6' is less then 8)
-Level: 1 NODE: (b'V6' is less then 7)
+Level: 1 NODE: Terminal: b'No'
+Level: 1 NODE: (b'HomeOwner' is an element of No)
 NEW LEVEL 
-Level: 2 NODE: (b'V8' is less then 46)
-Level: 2 NODE: (b'V10' is less then 139)
-Level: 2 NODE: (b'V14' is less then 71)
-Level: 2 NODE: (b'V14' is less then 74)
+Level: 2 NODE: (b'Income' is less then -0.7854058355870377)
+Level: 2 NODE: Terminal: b'No'
 NEW LEVEL 
-Level: 3 NODE: (b'V10' is less then 139)
-Level: 3 NODE: (b'V10' is less then 138)
-Level: 3 NODE: Terminal: b'van'
-Level: 3 NODE: Terminal: b'van'
-Level: 3 NODE: (b'V5' is less then 66)
-Level: 3 NODE: Terminal: b'bus'
-Level: 3 NODE: (b'V10' is less then 174)
-Level: 3 NODE: (b'V8' is less then 31)
-NEW LEVEL 
-Level: 4 NODE: (b'V5' is less then 62)
-Level: 4 NODE: (b'V14' is less then 72)
-Level: 4 NODE: (b'V1' is less then 80)
-Level: 4 NODE: Terminal: b'van'
-Level: 4 NODE: Terminal: b'saab'
-Level: 4 NODE: Terminal: b'bus'
-Level: 4 NODE: Terminal: b'saab'
-Level: 4 NODE: Terminal: b'opel'
-Level: 4 NODE: Terminal: b'opel'
-Level: 4 NODE: Terminal: b'van'
-NEW LEVEL 
-Level: 5 NODE: Terminal: b'opel'
-Level: 5 NODE: Terminal: b'bus'
-Level: 5 NODE: (b'V5' is less then 61)
-Level: 5 NODE: Terminal: b'bus'
-Level: 5 NODE: Terminal: b'opel'
-Level: 5 NODE: (b'V9' is less then 17)
-NEW LEVEL 
-Level: 6 NODE: Terminal: b'opel'
-Level: 6 NODE: (b'V6' is less then 7)
-Level: 6 NODE: Terminal: b'van'
-Level: 6 NODE: (b'V13' is less then 124)
-NEW LEVEL 
-Level: 7 NODE: Terminal: b'bus'
-Level: 7 NODE: Terminal: b'van'
-Level: 7 NODE: Terminal: b'van'
-Level: 7 NODE: Terminal: b'saab'
+Level: 3 NODE: Terminal: b'No'
+Level: 3 NODE: Terminal: b'Yes'
